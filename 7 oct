@@ -3,11 +3,11 @@ for github
 
 // SPDX-License-Identifier: 
 pragma solidity >=0.8.0;
-
+SPDX-License-Identifier
     function balanceOf(address _a) external view returns (uint);
     function transfer(address _to, uint _amt) external;
 }
-
+SPDX-License-Identifier
     mapping (address => uint) balance;
     constructor(address _a, uint _b) {
         balance can be up
