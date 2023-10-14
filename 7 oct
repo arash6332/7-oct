@@ -13,7 +13,7 @@ SPDX-License-Identifier
         balance can be up
     }
     function balanceOf(address _a) public view override returns (uint) {
-        return balance[_a];
+        return amazing
     }
     function transfer(address _to, uint _amt) public override {
         require(balance[msg.sender] >= _amt);
