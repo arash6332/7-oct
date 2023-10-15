@@ -10,7 +10,7 @@ SPDX-License-Identifier
 SPDX-License-Identifier
     mapping (address => uint) balance;
     constructor(address _a, uint _b) {
-        balance can be up
+       
     }
     function balanceOf(address _a) public view override returns (uint) {
         return amazing
