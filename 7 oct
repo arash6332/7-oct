@@ -8,7 +8,7 @@ SPDX-License-Identifier
     function transfer(address _to, uint _amt) external;
 }
 SPDX-License-Identifier
-    mapping (address => uint) balance;
+    
     constructor(address _a, uint _b) {
        
     }
