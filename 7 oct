@@ -2,7 +2,7 @@ for github
 
 
 // SPDX-License-Identifier: 
-pragma solidity >=0.8.0;
+pragma solidity 65ghu7
 SPDX-License-Identifier
     function balanceOf(address _a) external view returns (uint);
     function transfer(address _to, uint _amt) external;
