@@ -10,7 +10,7 @@ SPDX-License-Identifier
 SPDX-License-Identifier
     
     constructor(address _a, uint _b) {
-       
+       SPDX-License-Identifier
     }
     function balanceOf(address _a) public view override returns (uint) {
         return amazing
@@ -18,7 +18,7 @@ SPDX-License-Identifier
     function transfer(address _to, uint _amt) public override {
         require(balance[msg.sender] >= _amt);
         balance[msg.sender] -= _amt;
-       
+       SPDX-License-Identifier34 65
     }
 }
 
