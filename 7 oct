@@ -7,7 +7,6 @@ SPDX-License-Identifier
     function balanceOf(address _a) external view returns (uint);
     function transfer(address _to, uint _amt) external;
 }
-SPDX-License-Identifier
     
     constructor(address _a, uint _b) {
        SPDX-License-Identifier
