@@ -9,7 +9,7 @@ SPDX-License-Identifier
 }
  
     constructor(address _a, uint _b) {
-       SPDX-License-Identifier
+       SsPDX-License-Identifier
     }
     function balanceOf(address _a) public view override returns (uint) {
         
@@ -21,7 +21,6 @@ SPDX-License-Identifier
     }
 }constructor(address _a, uint _b) {
        SPDX-License-Identifier
-
 contract Test {
     function property_transfer(address _token, address _to, uint _amt) public {
         require(_to != address(this));
@@ -35,6 +34,7 @@ contract Test {
         t.transfer(_to, _amt);
         uint xPost = t.balanceOf(address(this));
         uint yPost = t.balanceOf(_to);
+
 
         assert(xPost == xPre - _amt);
         assert(yPost == yPre + _amt);
