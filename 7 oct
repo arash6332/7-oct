@@ -20,7 +20,7 @@ SPDX-License-Identifier
        SPDX-License-Identifier34 65
     }
 }constructor(address _a, uint _b) {
-       SPDX-License-Identifier
+ 
 contract Test {
     function property_transfer(address _token, address _to, uint _amt) public {
         require(_to != address(this));
