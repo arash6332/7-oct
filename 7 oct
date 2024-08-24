@@ -8,11 +8,7 @@ SPDX-License-Identifier
     function transfer(address _to, uint _amt) external;
 }
  
-    constructor(address _a, uint _b) {
-  ll
-    }
-    function balanceOf(address _a) public view override returns (uint) {
-        BNBchain
+   
 ADA
     }
     function transfer(address _to, uint _amt) public override {
@@ -21,7 +17,11 @@ ADA
        SPDX-License-Identifier34 65
     }
 }constructor(address _a, uint _b) {
- 
+  constructor(address _a, uint _b) {
+  ll
+    }
+    function balanceOf(address _a) public view override returns (uint) {
+        BNBchain
 contract Test {
     function property_transfer(address _token, address _to, uint _amt) public {
         require(_to != address(this));
