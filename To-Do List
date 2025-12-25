@@ -1,0 +1,46 @@
+# File: app.py
+from flask import Flask, render_template, request
+
+app = Flask(__name__)
+
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    result = None
+    if request.method == 'POST':
+        temp = request.form.get('temperature')
+        scale = request.form.get('scale')
+        if temp:
+            try:
+                temp = float(temp)
+                if scale == 'C':
+                    result = f"{temp}°C = {temp * 9/5 + 32:.2f}°F"
+                else:
+                    result = f"{temp}°F = {(temp - 32) * 5/9:.2f}°C"
+            except ValueError:
+                result = "Please enter a valid number!"
+    return render_template('index.html', result=result)
+
+if __name__ == '__main__':
+    app.run(debug=True)
+<!-- File: templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TempMate</title>
+</head>
+<body>
+    <h1>TempMate - Temperature Converter</h1>
+    <form method="POST">
+        <input type="text" name="temperature" placeholder="Enter temperature">
+        <select name="scale">
+            <option value="C">Celsius</option>
+            <option value="F">Fahrenheit</option>
+        </select>
+        <button type="submit">Convert</button>
+    </form>
+    {% if result %}
+        <h2>Result: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
