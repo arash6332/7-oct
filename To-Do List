@@ -44,3 +44,21 @@ if __name__ == '__main__':
     {% endif %}
 </body>
 </html>
+# SysSnap - A simple system information snapshot tool
+# Author: YourName
+# GitHub: https://github.com/YourUsername/SysSnap
+
+import platform
+import psutil
+
+def system_info():
+    print("=== System Information Snapshot ===")
+    print(f"System: {platform.system()} {platform.release()}")
+    print(f"Machine: {platform.machine()}")
+    print(f"Processor: {platform.processor()}")
+    print(f"CPU Cores: {psutil.cpu_count(logical=True)}")
+    print(f"RAM: {round(psutil.virtual_memory().total / (1024 ** 3), 2)} GB")
+    print(f"Disk Usage: {round(psutil.disk_usage('/').used / (1024 ** 3), 2)} GB used of {round(psutil.disk_usage('/').total / (1024 ** 3), 2)} GB")
+
+if __name__ == "__main__":
+    system_info()
