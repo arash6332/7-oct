@@ -51,6 +51,10 @@ if __name__ == '__main__':
 import platform
 import psutil
 
+    result = None
+    if request.method == 'POST':
+        temp = request.form.get('temperature')
+        scale = request.form.get('scale')
 def system_info():
     print("=== System Information Snapshot ===")
     print(f"System: {platform.system()} {platform.release()}")
